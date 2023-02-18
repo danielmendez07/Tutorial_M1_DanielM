@@ -1,0 +1,121 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Ponderada2_Script.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Line_numero" type="LineEdit" parent="."]
+margin_left = 310.0
+margin_top = 466.0
+margin_right = 532.0
+margin_bottom = 512.0
+
+[node name="Lista_Cheia" type="Label" parent="."]
+margin_right = 392.0
+margin_bottom = 136.0
+text = "Pressione o botão \"OK\" para aparecer uma lista preenchida"
+align = 1
+valign = 1
+
+[node name="Lista_Vazia" type="Label" parent="."]
+margin_left = 3.0
+margin_top = 475.0
+margin_right = 290.0
+margin_bottom = 489.0
+text = "Digite um número e ele será dividido por 2 "
+
+[node name="Texto" type="Label" parent="."]
+margin_left = -3.0
+margin_top = 297.0
+margin_right = 270.0
+margin_bottom = 335.0
+text = "Escreva um texto e ele aparecerá na Tela"
+align = 1
+valign = 1
+
+[node name="Valor" type="Label" parent="."]
+margin_left = -1.0
+margin_top = 187.0
+margin_right = 296.0
+margin_bottom = 228.0
+text = "Insira um dado desejado para salvar na lista"
+align = 1
+valign = 1
+
+[node name="Button_ok" type="Button" parent="."]
+margin_left = 420.0
+margin_top = 36.0
+margin_right = 591.0
+margin_bottom = 98.0
+text = "OK"
+
+[node name="Button_Mostrarresultado" type="Button" parent="."]
+margin_left = 320.0
+margin_top = 518.0
+margin_right = 491.0
+margin_bottom = 580.0
+text = "Resultado"
+
+[node name="Lista_aparecer_cheia" type="Label" parent="."]
+margin_left = 624.0
+margin_top = 4.0
+margin_right = 1016.0
+margin_bottom = 140.0
+
+[node name="Line_dado" type="LineEdit" parent="."]
+margin_left = 323.0
+margin_top = 186.0
+margin_right = 545.0
+margin_bottom = 232.0
+
+[node name="Line_Textotela" type="LineEdit" parent="."]
+margin_left = 314.0
+margin_top = 307.0
+margin_right = 536.0
+margin_bottom = 353.0
+
+[node name="Mostrar_dados" type="Button" parent="."]
+margin_left = 569.0
+margin_top = 162.0
+margin_right = 766.0
+margin_bottom = 190.0
+text = "Mostrar os Dados Salvos"
+
+[node name="Salvar_dados" type="Button" parent="."]
+margin_left = 570.0
+margin_top = 201.0
+margin_right = 767.0
+margin_bottom = 229.0
+text = "Salvar Dado"
+
+[node name="Resultado_Dados" type="Label" parent="."]
+margin_left = 792.0
+margin_top = 136.0
+margin_right = 1010.0
+margin_bottom = 244.0
+
+[node name="Texto_aparecer" type="Label" parent="."]
+margin_left = 559.0
+margin_top = 290.0
+margin_right = 807.0
+margin_bottom = 420.0
+
+[node name="Resultado_Divisao" type="Label" parent="."]
+margin_left = 562.0
+margin_top = 462.0
+margin_right = 810.0
+margin_bottom = 592.0
+
+[node name="Button_texto" type="Button" parent="."]
+margin_left = 316.0
+margin_top = 355.0
+margin_right = 487.0
+margin_bottom = 404.0
+text = "Mostrar Texto"
+
+[connection signal="pressed" from="Button_ok" to="." method="_on_Button_ok_pressed"]
+[connection signal="pressed" from="Button_Mostrarresultado" to="." method="_on_Button_Mostrarresultado_pressed"]
+[connection signal="pressed" from="Mostrar_dados" to="." method="_on_Mostrar_dados_pressed"]
+[connection signal="pressed" from="Salvar_dados" to="." method="_on_Salvar_dados_pressed"]
+[connection signal="pressed" from="Button_texto" to="." method="_on_Button_texto_pressed"]
